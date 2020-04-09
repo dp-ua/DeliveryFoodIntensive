@@ -321,6 +321,20 @@ body {
     .card-image {
         width: 100%;
     }
+    .card-info {
+        flex-wrap: wrap;
+    }
+    .price {
+        font-size: 20px;
+    }
+    .price:after {
+        block-size: 0px;
+    }
+    .category {
+        flex-basis: 100%;
+        max-width: none;
+        font-size: 24px;
+    }
     .promo-title {
         font-size: 24px;
         line-height: 1.4;
