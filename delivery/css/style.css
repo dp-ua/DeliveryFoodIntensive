@@ -28,7 +28,7 @@ body {
 
 .adress-input {
     height: 40px;
-    width: 690px;
+    flex: 0.8;
     background-image: url(../img/home.svg);
     background-repeat: no-repeat;
     background-position: left 11px center;
@@ -128,6 +128,7 @@ body {
     border-radius: 7px;
     overflow: hidden;
     margin-bottom: 30px;
+    flex-basis: 32%;
 }
 
 .card-image {
@@ -187,10 +188,18 @@ body {
     font-size: 18px;
     line-height: 32px;
     color: #8C8C8C;
-    margin-right: 10px;
     max-width: 150px;
     max-height: 32px;
+}
+
+.price {
+    margin-right: 10px;
+}
+
+.category {
+    text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .price:after {
@@ -201,5 +210,126 @@ body {
     display: inline-block;
     vertical-align: middle;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 5px;
+}
+
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-link {
+    display: inline-block;
+    color: #595959;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+}
+
+.footer-nav {
+    margin-right: auto;
+    margin-left: 35px;
+}
+
+.footer-link:not(:last-child) {
+    margin-right: 15px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-link:not(:last-child) {
+    margin-right: 21px;
+}
+
+@media (max-width:1366px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        background-position: top right -420px;
+    }
+    .category,
+    .price {
+        font-size: 14px;
+    }
+    .rating {
+        margin-right: 15px;
+        font-size: 10px;
+    }
+    .category {
+        max-width: 90px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        max-width: 750px;
+    }
+    .promo {
+        padding: 10px;
+        background-image: none;
+        max-height: 250px;
+    }
+    .card {
+        flex-basis: 49%;
+    }
+    .footer-link {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        max-width: 560px;
+        min-width: 300px;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .adress-input {
+        order: 5;
+        margin-top: 20px;
+        flex-basis: 100%;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+    .search-input {
+        flex-basis: 100%;
+    }
+    .button-text {
+        display: none;
+    }
+    .card {
+        flex-basis: 100%;
+    }
+    .card-image {
+        width: 100%;
+    }
+    .promo-title {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .promo-text {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .section-heading {
+        flex-wrap: wrap;
+    }
 }
