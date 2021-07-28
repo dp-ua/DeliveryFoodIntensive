@@ -6,5 +6,21 @@ cartButton.addEventListener("click", toggleModal);
 close.addEventListener("click", toggleModal);
 
 function toggleModal() {
-  modal.classList.toggle("is-open");
+    modal.classList.toggle("is-open");
 }
+
+// day 1
+
+const buttonAuth = document.querySelector('.button-auth');
+const modalAuth = document.querySelector('.modal-auth');
+const closeAuth = document.querySelector('.close-auth');
+
+function toggleModalAuth() {
+    modalAuth.classList.toggle("is-open");
+}
+
+buttonAuth.addEventListener('click', toggleModalAuth);
+closeAuth.addEventListener('click', toggleModalAuth);
+
+console.log('buttonAuth: ', buttonAuth);
+console.log('modalAuth: ', modalAuth);
